@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>POKEMON for rent</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            text-align: center;
+            min-height: 100vh;
+            background-color: rgb(0, 140, 255);
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        h1 {
+            margin: 30px 0;
+            text-transform: uppercase;
+            color: rgb(251, 255, 0);
+            text-shadow: 3px 1px black;
+
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+
+
+
+
+        }
+
+        .col {
+            flex-basis: 25%;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: rgb(77, 77, 77);
+            color: white;
+            align-items: center;
+            border: 2px dotted skyblue;
+
+        }
+
+        .col>* {
+            padding-bottom: 35px;
+        }
+
+        .col img {
+            width: 80%;
+
+        }
+
+        h2,
+        p {
+            text-align: center;
+        }
+
+        .name {
+            text-transform: uppercase;
+            color: yellowgreen;
+        }
+
+        .price {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+
+
+        }
+
+        .price:hover span {
+            background-color: black;
+            color: white;
+            border: 2px solid tomato;
+        }
+
+        span {
+            padding: 30px;
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            transition: .2s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pokemon for rent!</h1>
+    <section>
+        <div class="col">
+            <h2>Option 1</h2>
+            <img src="1-Jigglypuff.png" alt="">
+            <p class="name">Jigglypuff</p>
+            <p>Cute Charm or Competitive</p>
+            <p>Jigglypuff uses its eyes to mesmerize opponents. </p>
+            <p class="price"><span>100$</span></p>
+        </div>
+        <div class="col">
+            <h2>Option 2</h2>
+            <img src="2-squirtle.png" alt="">
+            <p class="name">Squirtle</p>
+            <p>Squirtle can spray foamy water from its mouth with great accuracy. </p>
+            <p>Squirtle's shell is a useful tool.</p>
+            <p class="price"><span>300$</span></p>
+        </div>
+        <div class="col">
+            <h2>Option 3</h2>
+            <img src="3-Charizard.png" alt="">
+            <p class="name">Charizard</p>
+            <p>Rage, one of Charizard's most powerful attacks. </p>
+            <p>Rage attack usually has a devastating effect on its opponents. </p>
+            <p class="price"><span>500$</span></p>
+        </div>
+
+    </section>
+</body>
+
+</html>
